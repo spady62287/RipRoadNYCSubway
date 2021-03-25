@@ -15,6 +15,7 @@
 		99EF926A260D14DE0045A3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EF9268260D14DE0045A3D1 /* LaunchScreen.storyboard */; };
 		99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */; };
 		99EF9280260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */; };
+		99EF9291260D1B560045A3D1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 99EF9290260D1B560045A3D1 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		99EF927B260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RipRoadNYCSubwayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipRoadNYCSubwayUITests.swift; sourceTree = "<group>"; };
 		99EF9281260D14DF0045A3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EF9290260D1B560045A3D1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		99EF9251260D14DD0045A3D1 = {
 			isa = PBXGroup;
 			children = (
+				99EF9290260D1B560045A3D1 /* .swiftlint.yml */,
 				99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */,
 				99EF9273260D14DF0045A3D1 /* RipRoadNYCSubwayTests */,
 				99EF927E260D14DF0045A3D1 /* RipRoadNYCSubwayUITests */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EF9291260D1B560045A3D1 /* .swiftlint.yml in Resources */,
 				99EF926A260D14DE0045A3D1 /* LaunchScreen.storyboard in Resources */,
 				99EF9267260D14DE0045A3D1 /* Assets.xcassets in Resources */,
 				99EF9265260D14DD0045A3D1 /* Main.storyboard in Resources */,
