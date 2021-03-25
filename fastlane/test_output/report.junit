@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='RipRoadNYCSubwayUITests.xctest' tests='4' failures='0'>
+  <testsuite name='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' tests='2' failures='0'>
+    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testExample' time='0.022'/>
+    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testPerformanceExample' time='0.478'/>
+  </testsuite>
+  <testsuite name='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' tests='2' failures='0'>
+    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testExample' time='1.867'/>
+    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testLaunchPerformance' time='16.394'/>
+  </testsuite>
+</testsuites>
