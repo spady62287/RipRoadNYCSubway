@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF925D260D14DD0045A3D1 /* AppDelegate.swift */; };
+		99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */; };
+		99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF9261260D14DD0045A3D1 /* ViewController.swift */; };
+		99EF9265260D14DD0045A3D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EF9263260D14DD0045A3D1 /* Main.storyboard */; };
+		99EF9267260D14DE0045A3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EF9266260D14DE0045A3D1 /* Assets.xcassets */; };
+		99EF926A260D14DE0045A3D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EF9268260D14DE0045A3D1 /* LaunchScreen.storyboard */; };
+		99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */; };
+		99EF9280260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99EF9271260D14DF0045A3D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EF9252260D14DD0045A3D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99EF9259260D14DD0045A3D1;
+			remoteInfo = RipRoadNYCSubway;
+		};
+		99EF927C260D14DF0045A3D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EF9252260D14DD0045A3D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99EF9259260D14DD0045A3D1;
+			remoteInfo = RipRoadNYCSubway;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99EF925A260D14DD0045A3D1 /* RipRoadNYCSubway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RipRoadNYCSubway.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EF925D260D14DD0045A3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99EF9261260D14DD0045A3D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99EF9264260D14DD0045A3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99EF9266260D14DE0045A3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99EF9269260D14DE0045A3D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99EF926B260D14DE0045A3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EF9270260D14DF0045A3D1 /* RipRoadNYCSubwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RipRoadNYCSubwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipRoadNYCSubwayTests.swift; sourceTree = "<group>"; };
+		99EF9276260D14DF0045A3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EF927B260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RipRoadNYCSubwayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipRoadNYCSubwayUITests.swift; sourceTree = "<group>"; };
+		99EF9281260D14DF0045A3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99EF9257260D14DD0045A3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EF926D260D14DF0045A3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EF9278260D14DF0045A3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99EF9251260D14DD0045A3D1 = {
+			isa = PBXGroup;
+			children = (
+				99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */,
+				99EF9273260D14DF0045A3D1 /* RipRoadNYCSubwayTests */,
+				99EF927E260D14DF0045A3D1 /* RipRoadNYCSubwayUITests */,
+				99EF925B260D14DD0045A3D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99EF925B260D14DD0045A3D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99EF925A260D14DD0045A3D1 /* RipRoadNYCSubway.app */,
+				99EF9270260D14DF0045A3D1 /* RipRoadNYCSubwayTests.xctest */,
+				99EF927B260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */ = {
+			isa = PBXGroup;
+			children = (
+				99EF925D260D14DD0045A3D1 /* AppDelegate.swift */,
+				99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */,
+				99EF9261260D14DD0045A3D1 /* ViewController.swift */,
+				99EF9263260D14DD0045A3D1 /* Main.storyboard */,
+				99EF9266260D14DE0045A3D1 /* Assets.xcassets */,
+				99EF9268260D14DE0045A3D1 /* LaunchScreen.storyboard */,
+				99EF926B260D14DE0045A3D1 /* Info.plist */,
+			);
+			path = RipRoadNYCSubway;
+			sourceTree = "<group>";
+		};
+		99EF9273260D14DF0045A3D1 /* RipRoadNYCSubwayTests */ = {
+			isa = PBXGroup;
+			children = (
+				99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */,
+				99EF9276260D14DF0045A3D1 /* Info.plist */,
+			);
+			path = RipRoadNYCSubwayTests;
+			sourceTree = "<group>";
+		};
+		99EF927E260D14DF0045A3D1 /* RipRoadNYCSubwayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */,
+				99EF9281260D14DF0045A3D1 /* Info.plist */,
+			);
+			path = RipRoadNYCSubwayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99EF9259260D14DD0045A3D1 /* RipRoadNYCSubway */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EF9284260D14DF0045A3D1 /* Build configuration list for PBXNativeTarget "RipRoadNYCSubway" */;
+			buildPhases = (
+				99EF9256260D14DD0045A3D1 /* Sources */,
+				99EF9257260D14DD0045A3D1 /* Frameworks */,
+				99EF9258260D14DD0045A3D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RipRoadNYCSubway;
+			productName = RipRoadNYCSubway;
+			productReference = 99EF925A260D14DD0045A3D1 /* RipRoadNYCSubway.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99EF926F260D14DF0045A3D1 /* RipRoadNYCSubwayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EF9287260D14DF0045A3D1 /* Build configuration list for PBXNativeTarget "RipRoadNYCSubwayTests" */;
+			buildPhases = (
+				99EF926C260D14DF0045A3D1 /* Sources */,
+				99EF926D260D14DF0045A3D1 /* Frameworks */,
+				99EF926E260D14DF0045A3D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99EF9272260D14DF0045A3D1 /* PBXTargetDependency */,
+			);
+			name = RipRoadNYCSubwayTests;
+			productName = RipRoadNYCSubwayTests;
+			productReference = 99EF9270260D14DF0045A3D1 /* RipRoadNYCSubwayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99EF927A260D14DF0045A3D1 /* RipRoadNYCSubwayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EF928A260D14DF0045A3D1 /* Build configuration list for PBXNativeTarget "RipRoadNYCSubwayUITests" */;
+			buildPhases = (
+				99EF9277260D14DF0045A3D1 /* Sources */,
+				99EF9278260D14DF0045A3D1 /* Frameworks */,
+				99EF9279260D14DF0045A3D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99EF927D260D14DF0045A3D1 /* PBXTargetDependency */,
+			);
+			name = RipRoadNYCSubwayUITests;
+			productName = RipRoadNYCSubwayUITests;
+			productReference = 99EF927B260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99EF9252260D14DD0045A3D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					99EF9259260D14DD0045A3D1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					99EF926F260D14DF0045A3D1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 99EF9259260D14DD0045A3D1;
+					};
+					99EF927A260D14DF0045A3D1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 99EF9259260D14DD0045A3D1;
+					};
+				};
+			};
+			buildConfigurationList = 99EF9255260D14DD0045A3D1 /* Build configuration list for PBXProject "RipRoadNYCSubway" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99EF9251260D14DD0045A3D1;
+			productRefGroup = 99EF925B260D14DD0045A3D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99EF9259260D14DD0045A3D1 /* RipRoadNYCSubway */,
+				99EF926F260D14DF0045A3D1 /* RipRoadNYCSubwayTests */,
+				99EF927A260D14DF0045A3D1 /* RipRoadNYCSubwayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99EF9258260D14DD0045A3D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EF926A260D14DE0045A3D1 /* LaunchScreen.storyboard in Resources */,
+				99EF9267260D14DE0045A3D1 /* Assets.xcassets in Resources */,
+				99EF9265260D14DD0045A3D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EF926E260D14DF0045A3D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EF9279260D14DF0045A3D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99EF9256260D14DD0045A3D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */,
+				99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */,
+				99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EF926C260D14DF0045A3D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EF9277260D14DF0045A3D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EF9280260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99EF9272260D14DF0045A3D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99EF9259260D14DD0045A3D1 /* RipRoadNYCSubway */;
+			targetProxy = 99EF9271260D14DF0045A3D1 /* PBXContainerItemProxy */;
+		};
+		99EF927D260D14DF0045A3D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99EF9259260D14DD0045A3D1 /* RipRoadNYCSubway */;
+			targetProxy = 99EF927C260D14DF0045A3D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99EF9263260D14DD0045A3D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99EF9264260D14DD0045A3D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99EF9268260D14DE0045A3D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99EF9269260D14DE0045A3D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99EF9282260D14DF0045A3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99EF9283260D14DF0045A3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99EF9285260D14DF0045A3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KJ59DSH6L;
+				INFOPLIST_FILE = RipRoadNYCSubway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RipRoadNYCSubway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99EF9286260D14DF0045A3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KJ59DSH6L;
+				INFOPLIST_FILE = RipRoadNYCSubway/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RipRoadNYCSubway;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99EF9288260D14DF0045A3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KJ59DSH6L;
+				INFOPLIST_FILE = RipRoadNYCSubwayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RipRoadNYCSubwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RipRoadNYCSubway.app/RipRoadNYCSubway";
+			};
+			name = Debug;
+		};
+		99EF9289260D14DF0045A3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KJ59DSH6L;
+				INFOPLIST_FILE = RipRoadNYCSubwayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RipRoadNYCSubwayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RipRoadNYCSubway.app/RipRoadNYCSubway";
+			};
+			name = Release;
+		};
+		99EF928B260D14DF0045A3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KJ59DSH6L;
+				INFOPLIST_FILE = RipRoadNYCSubwayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RipRoadNYCSubwayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RipRoadNYCSubway;
+			};
+			name = Debug;
+		};
+		99EF928C260D14DF0045A3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KJ59DSH6L;
+				INFOPLIST_FILE = RipRoadNYCSubwayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.RipRoadNYCSubwayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RipRoadNYCSubway;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99EF9255260D14DD0045A3D1 /* Build configuration list for PBXProject "RipRoadNYCSubway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EF9282260D14DF0045A3D1 /* Debug */,
+				99EF9283260D14DF0045A3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99EF9284260D14DF0045A3D1 /* Build configuration list for PBXNativeTarget "RipRoadNYCSubway" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EF9285260D14DF0045A3D1 /* Debug */,
+				99EF9286260D14DF0045A3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99EF9287260D14DF0045A3D1 /* Build configuration list for PBXNativeTarget "RipRoadNYCSubwayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EF9288260D14DF0045A3D1 /* Debug */,
+				99EF9289260D14DF0045A3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99EF928A260D14DF0045A3D1 /* Build configuration list for PBXNativeTarget "RipRoadNYCSubwayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EF928B260D14DF0045A3D1 /* Debug */,
+				99EF928C260D14DF0045A3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99EF9252260D14DD0045A3D1 /* Project object */;
+}
