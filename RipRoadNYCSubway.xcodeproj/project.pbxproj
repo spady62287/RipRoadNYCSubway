@@ -16,6 +16,12 @@
 		99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */; };
 		99EF9280260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */; };
 		99EF9291260D1B560045A3D1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 99EF9290260D1B560045A3D1 /* .swiftlint.yml */; };
+		99EF92A8260D204F0045A3D1 /* TestJsonExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 99EF92A7260D204F0045A3D1 /* TestJsonExample.json */; };
+		99EF92AF260D22E00045A3D1 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF92AE260D22E00045A3D1 /* BaseRequest.swift */; };
+		99EF92B7260D22F40045A3D1 /* BaseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF92B6260D22F40045A3D1 /* BaseCodable.swift */; };
+		99EF92BC260D232E0045A3D1 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF92BB260D232E0045A3D1 /* BaseResponse.swift */; };
+		99EF92C1260D23400045A3D1 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF92C0260D23400045A3D1 /* BaseService.swift */; };
+		99EF92C6260D26F40045A3D1 /* TestBaseClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF92C5260D26F40045A3D1 /* TestBaseClasses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		99EF927F260D14DF0045A3D1 /* RipRoadNYCSubwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipRoadNYCSubwayUITests.swift; sourceTree = "<group>"; };
 		99EF9281260D14DF0045A3D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99EF9290260D1B560045A3D1 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		99EF92A7260D204F0045A3D1 /* TestJsonExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TestJsonExample.json; path = RipRoadNYCSubway/TestJsonExample.json; sourceTree = "<group>"; };
+		99EF92AE260D22E00045A3D1 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		99EF92B6260D22F40045A3D1 /* BaseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCodable.swift; sourceTree = "<group>"; };
+		99EF92BB260D232E0045A3D1 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		99EF92C0260D23400045A3D1 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		99EF92C5260D26F40045A3D1 /* TestBaseClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseClasses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		99EF9251260D14DD0045A3D1 = {
 			isa = PBXGroup;
 			children = (
+				99EF92A7260D204F0045A3D1 /* TestJsonExample.json */,
 				99EF9290260D1B560045A3D1 /* .swiftlint.yml */,
 				99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */,
 				99EF9273260D14DF0045A3D1 /* RipRoadNYCSubwayTests */,
@@ -102,6 +115,7 @@
 		99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */ = {
 			isa = PBXGroup;
 			children = (
+				99EF92A6260D1FF00045A3D1 /* Subsystems */,
 				99EF925D260D14DD0045A3D1 /* AppDelegate.swift */,
 				99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */,
 				99EF9261260D14DD0045A3D1 /* ViewController.swift */,
@@ -117,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */,
+				99EF92C5260D26F40045A3D1 /* TestBaseClasses.swift */,
 				99EF9276260D14DF0045A3D1 /* Info.plist */,
 			);
 			path = RipRoadNYCSubwayTests;
@@ -129,6 +144,33 @@
 				99EF9281260D14DF0045A3D1 /* Info.plist */,
 			);
 			path = RipRoadNYCSubwayUITests;
+			sourceTree = "<group>";
+		};
+		99EF92A6260D1FF00045A3D1 /* Subsystems */ = {
+			isa = PBXGroup;
+			children = (
+				99EF92AD260D22720045A3D1 /* Bases */,
+				99EF92AC260D22690045A3D1 /* Protocols */,
+			);
+			path = Subsystems;
+			sourceTree = "<group>";
+		};
+		99EF92AC260D22690045A3D1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				99EF92B6260D22F40045A3D1 /* BaseCodable.swift */,
+				99EF92BB260D232E0045A3D1 /* BaseResponse.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		99EF92AD260D22720045A3D1 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				99EF92AE260D22E00045A3D1 /* BaseRequest.swift */,
+				99EF92C0260D23400045A3D1 /* BaseService.swift */,
+			);
+			path = Bases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EF92A8260D204F0045A3D1 /* TestJsonExample.json in Resources */,
 				99EF9291260D1B560045A3D1 /* .swiftlint.yml in Resources */,
 				99EF926A260D14DE0045A3D1 /* LaunchScreen.storyboard in Resources */,
 				99EF9267260D14DE0045A3D1 /* Assets.xcassets in Resources */,
@@ -262,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99EF92AF260D22E00045A3D1 /* BaseRequest.swift in Sources */,
 				99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */,
 				99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */,
+				99EF92BC260D232E0045A3D1 /* BaseResponse.swift in Sources */,
+				99EF92C1260D23400045A3D1 /* BaseService.swift in Sources */,
+				99EF92B7260D22F40045A3D1 /* BaseCodable.swift in Sources */,
 				99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */,
+				99EF92C6260D26F40045A3D1 /* TestBaseClasses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
