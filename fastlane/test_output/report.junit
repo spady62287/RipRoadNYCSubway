@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='RipRoadNYCSubwayUITests.xctest' tests='4' failures='0'>
-  <testsuite name='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' tests='2' failures='0'>
-    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testExample' time='0.022'/>
-    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testPerformanceExample' time='0.478'/>
-  </testsuite>
+<testsuites name='RipRoadNYCSubwayTests.xctest' tests='6' failures='0'>
   <testsuite name='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' tests='2' failures='0'>
-    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testExample' time='1.867'/>
-    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testLaunchPerformance' time='16.394'/>
+    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testExample' time='2.525'/>
+    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testLaunchPerformance' time='16.497'/>
+  </testsuite>
+  <testsuite name='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' tests='2' failures='0'>
+    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testExample' time='0.006'/>
+    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testPerformanceExample' time='0.406'/>
+  </testsuite>
+  <testsuite name='RipRoadNYCSubwayTests.TestBaseClasses' tests='2' failures='0'>
+    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseResponse' time='0.006'/>
+    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseService' time='0.063'/>
   </testsuite>
 </testsuites>
