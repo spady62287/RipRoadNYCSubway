@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='RipRoadNYCSubwayTests.xctest' tests='6' failures='0'>
-  <testsuite name='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' tests='2' failures='0'>
-    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testExample' time='2.525'/>
-    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testLaunchPerformance' time='16.497'/>
-  </testsuite>
+<testsuites name='RipRoadNYCSubwayUITests.xctest' tests='7' failures='0'>
   <testsuite name='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' tests='2' failures='0'>
-    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testExample' time='0.006'/>
-    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testPerformanceExample' time='0.406'/>
+    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testExample' time='0.001'/>
+    <testcase classname='RipRoadNYCSubwayTests.RipRoadNYCSubwayTests' name='testPerformanceExample' time='0.570'/>
   </testsuite>
-  <testsuite name='RipRoadNYCSubwayTests.TestBaseClasses' tests='2' failures='0'>
-    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseResponse' time='0.006'/>
-    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseService' time='0.063'/>
+  <testsuite name='RipRoadNYCSubwayTests.TestBaseClasses' tests='3' failures='0'>
+    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseResponse' time='0.001'/>
+    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseService' time='0.090'/>
+    <testcase classname='RipRoadNYCSubwayTests.TestBaseClasses' name='testBaseServiceHandlesErrors' time='0.002'/>
+  </testsuite>
+  <testsuite name='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' tests='2' failures='0'>
+    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testExample' time='2.177'/>
+    <testcase classname='RipRoadNYCSubwayUITests.RipRoadNYCSubwayUITests' name='testLaunchPerformance' time='16.367'/>
   </testsuite>
 </testsuites>
