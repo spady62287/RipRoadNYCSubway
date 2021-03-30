@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9919D88B2613941800C60178 /* BaseJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919D88A2613941800C60178 /* BaseJSONSerialization.swift */; };
+		99BBF7A52613A048004A6A13 /* SubwayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7A42613A047004A6A13 /* SubwayResult.swift */; };
+		99BBF7AD2613A4E7004A6A13 /* TestSubwayResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7AC2613A4E6004A6A13 /* TestSubwayResultModel.swift */; };
+		99BBF7CB2613CE45004A6A13 /* SubwayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */; };
+		99BBF7D42613CE9E004A6A13 /* SubwayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7D32613CE9E004A6A13 /* SubwayResponse.swift */; };
+		99BBF7E62613D140004A6A13 /* SubwayUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7E52613D140004A6A13 /* SubwayUtility.swift */; };
 		99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF925D260D14DD0045A3D1 /* AppDelegate.swift */; };
 		99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */; };
 		99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF9261260D14DD0045A3D1 /* ViewController.swift */; };
@@ -43,6 +48,11 @@
 
 /* Begin PBXFileReference section */
 		9919D88A2613941800C60178 /* BaseJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJSONSerialization.swift; sourceTree = "<group>"; };
+		99BBF7A42613A047004A6A13 /* SubwayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayResult.swift; sourceTree = "<group>"; };
+		99BBF7AC2613A4E6004A6A13 /* TestSubwayResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubwayResultModel.swift; sourceTree = "<group>"; };
+		99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRequest.swift; sourceTree = "<group>"; };
+		99BBF7D32613CE9E004A6A13 /* SubwayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayResponse.swift; sourceTree = "<group>"; };
+		99BBF7E52613D140004A6A13 /* SubwayUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayUtility.swift; sourceTree = "<group>"; };
 		99EF925A260D14DD0045A3D1 /* RipRoadNYCSubway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RipRoadNYCSubway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EF925D260D14DD0045A3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +100,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99BBF7A22613A001004A6A13 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				99BBF7ED2613D30E004A6A13 /* Controller */,
+				99BBF7A32613A02F004A6A13 /* Model */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		99BBF7A32613A02F004A6A13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99BBF7A42613A047004A6A13 /* SubwayResult.swift */,
+				99BBF7D22613CE81004A6A13 /* Response */,
+				99BBF7C92613CE27004A6A13 /* Request */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99BBF7C92613CE27004A6A13 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		99BBF7D22613CE81004A6A13 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				99BBF7D32613CE9E004A6A13 /* SubwayResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		99BBF7ED2613D30E004A6A13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99BBF7E52613D140004A6A13 /* SubwayUtility.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		99EF9251260D14DD0045A3D1 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +168,7 @@
 		99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */ = {
 			isa = PBXGroup;
 			children = (
+				99BBF7A22613A001004A6A13 /* Features */,
 				99EF92A6260D1FF00045A3D1 /* Subsystems */,
 				99EF925D260D14DD0045A3D1 /* AppDelegate.swift */,
 				99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */,
@@ -133,6 +187,7 @@
 				99EF9274260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift */,
 				99EF92C5260D26F40045A3D1 /* TestBaseClasses.swift */,
 				99EF9276260D14DF0045A3D1 /* Info.plist */,
+				99BBF7AC2613A4E6004A6A13 /* TestSubwayResultModel.swift */,
 			);
 			path = RipRoadNYCSubwayTests;
 			sourceTree = "<group>";
@@ -305,13 +360,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BBF7CB2613CE45004A6A13 /* SubwayRequest.swift in Sources */,
 				99EF92AF260D22E00045A3D1 /* BaseRequest.swift in Sources */,
 				9919D88B2613941800C60178 /* BaseJSONSerialization.swift in Sources */,
 				99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */,
 				99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */,
 				99EF92BC260D232E0045A3D1 /* BaseResponse.swift in Sources */,
 				99EF92C1260D23400045A3D1 /* BaseService.swift in Sources */,
+				99BBF7D42613CE9E004A6A13 /* SubwayResponse.swift in Sources */,
 				99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */,
+				99BBF7A52613A048004A6A13 /* SubwayResult.swift in Sources */,
+				99BBF7E62613D140004A6A13 /* SubwayUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BBF7AD2613A4E7004A6A13 /* TestSubwayResultModel.swift in Sources */,
 				99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */,
 				99EF92C6260D26F40045A3D1 /* TestBaseClasses.swift in Sources */,
 			);
