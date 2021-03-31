@@ -22,9 +22,18 @@ struct SubwayData {
 }
 
 struct Column {
-    let index: String
+    let index: Int
     let name: String
     let fieldName: String
+}
+
+struct ColumnItemViewModel {
+    let fieldName: String
+    let object: Any
+}
+
+struct SubwayItemViewModel {
+    var subwayDictionary: [String : ColumnItemViewModel] = [:]
 }
 
 extension SubwayResult {
@@ -52,7 +61,7 @@ extension SubwayResult {
         for columnObject in columnArray {
             if let object = columnObject as? [String: Any] {
                 if let fieldName = object[SubwayJSONKeys.fieldName.rawValue] as? String,
-                   let index = object[SubwayJSONKeys.index.rawValue] as? String,
+                   let index = object[SubwayJSONKeys.index.rawValue] as? Int,
                    let name = object[SubwayJSONKeys.name.rawValue] as? String {
                     coloumsArrayPlaceholder.append(Column(index: index, name: name, fieldName: fieldName))
                 }
@@ -60,5 +69,77 @@ extension SubwayResult {
         }
         
         self.columns = coloumsArrayPlaceholder
+    }
+}
+
+extension SubwayResult {
+    func didRequestSucceed() -> Bool {
+        return self.success
+    }
+    
+    func numberOfItems(with subwayLine: String?) -> Int {
+        return filterList(with: subwayLine).count
+    }
+    
+    func itemFrom(indexPath: IndexPath, with subwayLine: String?) -> SubwayItemViewModel? {
+        guard self.columns.count == 13 else {
+            return nil
+        }
+        
+        guard indexPath.row < self.result.data.count && indexPath.row >= 0 else {
+            return nil
+        }
+        
+        let list = filterList(with: subwayLine)
+        let item = list[indexPath.row]
+        
+        var subwayItem = SubwayItemViewModel()
+        
+        for column in self.columns {
+            subwayItem.subwayDictionary[column.name] = ColumnItemViewModel(fieldName: column.fieldName, object: item[column.index])
+        }
+        
+        return subwayItem
+    }
+    
+    func listOfSubwayLines() -> Set<String> {
+        var list = Set<String>()
+        
+        for item in self.result.data {
+            if let lineArray = item[12] as? String {
+                let characters = Array(lineArray)
+                for character in characters {
+                    list.insert("\(character)")
+                }
+            }
+        }
+        
+        list.remove(" ")
+        list.remove("-")
+        
+        return list
+    }
+    
+    func filterList(with subwayLine: String?) -> [[Any]] {
+        
+        guard let subwayLine = subwayLine else {
+            return self.result.data
+        }
+        
+        var newList: [[Any]] = []
+        
+        for item in self.result.data {
+            if let lineArray = item[12] as? String {
+                let characters = Array(lineArray)
+                for character in characters {
+                    if subwayLine == "\(character)" {
+                        newList.append(item)
+                        break
+                    }
+                }
+            }
+        }
+        
+        return newList
     }
 }
