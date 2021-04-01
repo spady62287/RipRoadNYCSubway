@@ -38,9 +38,17 @@ class BaseViewController: UIViewController {
         hideErrorView(with: errorView)
         showLoadingView(animated: true, after: 3.0)
         
-        SubwayUtility.subwayJSONObject(SubwayRequestLocal()) { response in
+        let request = SubwayRequest()
+        let timestamp = Int(NSDate().timeIntervalSince1970) * 1000
+        request.parameters = ["timestamp": timestamp]
+        
+        SubwayUtility.subwayJSONObject(request) { response in
             DispatchQueue.main.async {
-                if response.result == nil {
+                if let error = response.error {
+                    self.handleResult(subwayResult: nil)
+                    self.showErrorView(with: errorView)
+                    dump(error)
+                } else if response.result == nil {
                     self.handleResult(subwayResult: nil)
                     self.hideLoadingView()
                     self.showErrorView(with: errorView)
@@ -50,10 +58,6 @@ class BaseViewController: UIViewController {
                     self.hideLoadingView()
                     tableView.reloadData()
                     collectionView.reloadData()
-                } else if let error = response.error {
-                    self.handleResult(subwayResult: nil)
-                    self.showErrorView(with: errorView)
-                    dump(error)
                 }
             }
         }
