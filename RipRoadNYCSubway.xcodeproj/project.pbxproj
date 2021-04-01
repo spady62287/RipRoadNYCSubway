@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9919D88B2613941800C60178 /* BaseJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919D88A2613941800C60178 /* BaseJSONSerialization.swift */; };
+		999B420B2616173B00AFBD66 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B420A2616173B00AFBD66 /* BaseViewController.swift */; };
+		999B42112616178900AFBD66 /* AnimatedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B42102616178900AFBD66 /* AnimatedLoader.swift */; };
+		999B421926161C2400AFBD66 /* TestBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B421826161C2400AFBD66 /* TestBaseViewController.swift */; };
+		99B2931B26163B7900D71910 /* SubwayLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2931A26163B7900D71910 /* SubwayLineCollectionViewCell.swift */; };
+		99B2932026163F0600D71910 /* SubwayStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B2931F26163F0600D71910 /* SubwayStationTableViewCell.swift */; };
 		99BBF7A52613A048004A6A13 /* SubwayResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7A42613A047004A6A13 /* SubwayResult.swift */; };
 		99BBF7AD2613A4E7004A6A13 /* TestSubwayResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7AC2613A4E6004A6A13 /* TestSubwayResultModel.swift */; };
 		99BBF7CB2613CE45004A6A13 /* SubwayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */; };
@@ -48,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		9919D88A2613941800C60178 /* BaseJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJSONSerialization.swift; sourceTree = "<group>"; };
+		999B420A2616173B00AFBD66 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		999B42102616178900AFBD66 /* AnimatedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLoader.swift; sourceTree = "<group>"; };
+		999B421826161C2400AFBD66 /* TestBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseViewController.swift; sourceTree = "<group>"; };
+		99B2931A26163B7900D71910 /* SubwayLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayLineCollectionViewCell.swift; sourceTree = "<group>"; };
+		99B2931F26163F0600D71910 /* SubwayStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayStationTableViewCell.swift; sourceTree = "<group>"; };
 		99BBF7A42613A047004A6A13 /* SubwayResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayResult.swift; sourceTree = "<group>"; };
 		99BBF7AC2613A4E6004A6A13 /* TestSubwayResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubwayResultModel.swift; sourceTree = "<group>"; };
 		99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRequest.swift; sourceTree = "<group>"; };
@@ -100,11 +110,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		999B420F2616177300AFBD66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				999B42102616178900AFBD66 /* AnimatedLoader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		999B421D26161F9F00AFBD66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99EF9263260D14DD0045A3D1 /* Main.storyboard */,
+				99B2931A26163B7900D71910 /* SubwayLineCollectionViewCell.swift */,
+				99B2931F26163F0600D71910 /* SubwayStationTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		99BBF7A22613A001004A6A13 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				99BBF7ED2613D30E004A6A13 /* Controller */,
+				99BBF7E52613D140004A6A13 /* SubwayUtility.swift */,
 				99BBF7A32613A02F004A6A13 /* Model */,
+				999B421D26161F9F00AFBD66 /* View */,
+				99BBF7ED2613D30E004A6A13 /* Controller */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -138,7 +168,7 @@
 		99BBF7ED2613D30E004A6A13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				99BBF7E52613D140004A6A13 /* SubwayUtility.swift */,
+				99EF9261260D14DD0045A3D1 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,12 +198,10 @@
 		99EF925C260D14DD0045A3D1 /* RipRoadNYCSubway */ = {
 			isa = PBXGroup;
 			children = (
-				99BBF7A22613A001004A6A13 /* Features */,
-				99EF92A6260D1FF00045A3D1 /* Subsystems */,
 				99EF925D260D14DD0045A3D1 /* AppDelegate.swift */,
 				99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */,
-				99EF9261260D14DD0045A3D1 /* ViewController.swift */,
-				99EF9263260D14DD0045A3D1 /* Main.storyboard */,
+				99BBF7A22613A001004A6A13 /* Features */,
+				99EF92A6260D1FF00045A3D1 /* Subsystems */,
 				99EF9266260D14DE0045A3D1 /* Assets.xcassets */,
 				99EF9268260D14DE0045A3D1 /* LaunchScreen.storyboard */,
 				99EF926B260D14DE0045A3D1 /* Info.plist */,
@@ -188,6 +216,7 @@
 				99EF92C5260D26F40045A3D1 /* TestBaseClasses.swift */,
 				99EF9276260D14DF0045A3D1 /* Info.plist */,
 				99BBF7AC2613A4E6004A6A13 /* TestSubwayResultModel.swift */,
+				999B421826161C2400AFBD66 /* TestBaseViewController.swift */,
 			);
 			path = RipRoadNYCSubwayTests;
 			sourceTree = "<group>";
@@ -204,6 +233,7 @@
 		99EF92A6260D1FF00045A3D1 /* Subsystems */ = {
 			isa = PBXGroup;
 			children = (
+				999B420F2616177300AFBD66 /* View */,
 				99EF92AD260D22720045A3D1 /* Bases */,
 				99EF92AC260D22690045A3D1 /* Protocols */,
 			);
@@ -224,6 +254,7 @@
 			children = (
 				99EF92AE260D22E00045A3D1 /* BaseRequest.swift */,
 				99EF92C0260D23400045A3D1 /* BaseService.swift */,
+				999B420A2616173B00AFBD66 /* BaseViewController.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -361,10 +392,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BBF7CB2613CE45004A6A13 /* SubwayRequest.swift in Sources */,
+				99B2931B26163B7900D71910 /* SubwayLineCollectionViewCell.swift in Sources */,
 				99EF92AF260D22E00045A3D1 /* BaseRequest.swift in Sources */,
 				9919D88B2613941800C60178 /* BaseJSONSerialization.swift in Sources */,
+				99B2932026163F0600D71910 /* SubwayStationTableViewCell.swift in Sources */,
+				999B42112616178900AFBD66 /* AnimatedLoader.swift in Sources */,
 				99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */,
 				99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */,
+				999B420B2616173B00AFBD66 /* BaseViewController.swift in Sources */,
 				99EF92BC260D232E0045A3D1 /* BaseResponse.swift in Sources */,
 				99EF92C1260D23400045A3D1 /* BaseService.swift in Sources */,
 				99BBF7D42613CE9E004A6A13 /* SubwayResponse.swift in Sources */,
@@ -379,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99BBF7AD2613A4E7004A6A13 /* TestSubwayResultModel.swift in Sources */,
+				999B421926161C2400AFBD66 /* TestBaseViewController.swift in Sources */,
 				99EF9275260D14DF0045A3D1 /* RipRoadNYCSubwayTests.swift in Sources */,
 				99EF92C6260D26F40045A3D1 /* TestBaseClasses.swift in Sources */,
 			);
