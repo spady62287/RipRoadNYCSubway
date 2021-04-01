@@ -24,6 +24,18 @@ class BaseService {
         return endpoint
     }
     
+    static var subwayListEndpoint: String {
+        guard let info = Bundle.main.infoDictionary else {
+            return ""
+        }
+        
+        guard let endpoint = info["baseUrl"] as? String else {
+            return ""
+        }
+        
+        return endpoint
+    }
+    
     static fileprivate let dispatchQueueQueue: DispatchQueue = DispatchQueue(label: "BaseService.dispatchQueueQueue", attributes: .concurrent)
     static fileprivate var _dispatchQueue: DispatchQueue = DispatchQueue.main
     

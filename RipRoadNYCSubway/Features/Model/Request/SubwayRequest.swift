@@ -13,3 +13,10 @@ class SubwayRequestLocal: BaseRequest {
         return URL(fileURLWithPath: urlString)
     }
 }
+
+class SubwayRequest: BaseRequest {
+    override var url: URL? {
+        let urlString = BaseService.subwayListEndpoint
+        return URL(string: urlString)
+    }
+}
