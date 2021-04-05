@@ -11,8 +11,9 @@ import UIKit
 class BaseViewController: UIViewController {
     
     var subwayResult: SubwayResult?
-    var subwayLineList: Set<String>?
+    var subwayLineList: LinkedList<SubwayListViewModel>?
     var selectedLine: String?
+    var previousPath: IndexPath?
         
     lazy var loadingView: UIView = { [unowned self] in
         let view = UIView(frame: self.view.bounds)

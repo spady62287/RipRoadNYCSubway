@@ -36,6 +36,11 @@ struct SubwayItemViewModel {
     var subwayDictionary: [String : ColumnItemViewModel] = [:]
 }
 
+struct SubwayListViewModel {
+    var isSelected: Bool = false
+    var itemValue: String = ""
+}
+
 extension SubwayResult {
     init?(json: [String: Any]) {
         
@@ -102,7 +107,7 @@ extension SubwayResult {
         return subwayItem
     }
     
-    func listOfSubwayLines() -> Set<String> {
+    func listOfSubwayLines() -> LinkedList<SubwayListViewModel> {
         var list = Set<String>()
         
         for item in self.result.data {
@@ -117,7 +122,12 @@ extension SubwayResult {
         list.remove(" ")
         list.remove("-")
         
-        return list
+        var listViewModel = LinkedList<SubwayListViewModel>()
+        for item in list {
+            listViewModel.push(SubwayListViewModel(itemValue: item))
+        }
+        
+        return listViewModel
     }
     
     func filterList(with subwayLine: String?) -> [[Any]] {
