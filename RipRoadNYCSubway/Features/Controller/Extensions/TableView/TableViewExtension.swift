@@ -13,20 +13,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! SubwayStationTableViewCell
         if let subwayResult = self.subwayResult {
             let subwayItemViewModel = subwayResult.itemFrom(indexPath: indexPath, with: self.selectedLine)
+            let lineViewModel = subwayItemViewModel.subwayDictionary["LINE"]
+            let nameViewModel = subwayItemViewModel.subwayDictionary["NAME"]
+            let theGeomViewModel = subwayItemViewModel.subwayDictionary["the_geom"]
             
-            if let subwayItemViewModel = subwayItemViewModel {
-                let lineViewModel = subwayItemViewModel.subwayDictionary["LINE"]
-                let nameViewModel = subwayItemViewModel.subwayDictionary["NAME"]
-                let theGeomViewModel = subwayItemViewModel.subwayDictionary["the_geom"]
-                
-                if let nameViewModel = nameViewModel,
-                   let lineViewModel = lineViewModel,
-                   let theGeomViewModel = theGeomViewModel {
-                    cell.stationName!.text = "Station Name: \(nameViewModel.object)"
-                    cell.stationLines!.text = "Station Lines: \(lineViewModel.object)"
-                    cell.stationLocation!.text = "Station Location: \(theGeomViewModel.object)"
-                }
+            if let nameViewModel = nameViewModel,
+               let lineViewModel = lineViewModel,
+               let theGeomViewModel = theGeomViewModel {
+                cell.stationName!.text = "Station Name: \(nameViewModel.object)"
+                cell.stationLines!.text = "Station Lines: \(lineViewModel.object)"
+                cell.stationLocation!.text = "Station Location: \(theGeomViewModel.object)"
             }
+
         }
         return cell
     }

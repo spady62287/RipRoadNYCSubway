@@ -27,20 +27,6 @@ struct Column {
     let fieldName: String
 }
 
-struct ColumnItemViewModel {
-    let fieldName: String
-    let object: Any
-}
-
-struct SubwayItemViewModel {
-    var subwayDictionary: [String : ColumnItemViewModel] = [:]
-}
-
-struct SubwayListViewModel {
-    var isSelected: Bool = false
-    var itemValue: String = ""
-}
-
 extension SubwayResult {
     init?(json: [String: Any]) {
         
@@ -86,15 +72,7 @@ extension SubwayResult {
         return filterList(with: subwayLine).count
     }
     
-    func itemFrom(indexPath: IndexPath, with subwayLine: String?) -> SubwayItemViewModel? {
-        guard self.columns.count == 13 else {
-            return nil
-        }
-        
-        guard indexPath.row < self.result.data.count && indexPath.row >= 0 else {
-            return nil
-        }
-        
+    func itemFrom(indexPath: IndexPath, with subwayLine: String?) -> SubwayItemViewModel {
         let list = filterList(with: subwayLine)
         let item = list[indexPath.row]
         
@@ -108,10 +86,11 @@ extension SubwayResult {
     }
     
     func listOfSubwayLines() -> LinkedList<SubwayListViewModel> {
+        let lineColumn = lineColumnItem()
         var list = Set<String>()
         
         for item in self.result.data {
-            if let lineArray = item[12] as? String {
+            if let lineArray = item[lineColumn.index] as? String {
                 let characters = Array(lineArray)
                 for character in characters {
                     list.insert("\(character)")
@@ -131,15 +110,16 @@ extension SubwayResult {
     }
     
     func filterList(with subwayLine: String?) -> [[Any]] {
-        
         guard let subwayLine = subwayLine else {
             return self.result.data
         }
         
         var newList: [[Any]] = []
         
+        let lineColumn = lineColumnItem()
+
         for item in self.result.data {
-            if let lineArray = item[12] as? String {
+            if let lineArray = item[lineColumn.index] as? String {
                 let characters = Array(lineArray)
                 for character in characters {
                     if subwayLine == "\(character)" {
@@ -151,5 +131,15 @@ extension SubwayResult {
         }
         
         return newList
+    }
+    
+    private func lineColumnItem() -> Column {
+        var lineColumn: Column = Column(index: 12, name: "LINE", fieldName: "line")
+        for column in self.columns {
+            if column.name == "LINE" {
+                lineColumn = column
+            }
+        }
+        return lineColumn
     }
 }

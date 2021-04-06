@@ -101,36 +101,35 @@ class TestSubwayResultModel: XCTestCase {
                     if let subwayResult = subwayResult {
                         let indexPath = IndexPath.init(row: 25, section: 0)
                         let subwayItemViewModel = subwayResult.itemFrom(indexPath: indexPath, with: nil)
-                        if let subwayItemViewModel = subwayItemViewModel {
-                            
-                            let updatedMetaViewModel = subwayItemViewModel.subwayDictionary["updated_meta"]
-                            let metaViewModel = subwayItemViewModel.subwayDictionary["meta"]
-                            let objectIdViewModel = subwayItemViewModel.subwayDictionary["OBJECTID"]
-                            let urlViewModel = subwayItemViewModel.subwayDictionary["URL"]
-                            let positionViewModel = subwayItemViewModel.subwayDictionary["position"]
-                            let theGeomViewModel = subwayItemViewModel.subwayDictionary["the_geom"]
-                            let createdMetaViewModel = subwayItemViewModel.subwayDictionary["created_meta"]
-                            let lineViewModel = subwayItemViewModel.subwayDictionary["LINE"]
-                            let nameViewModel = subwayItemViewModel.subwayDictionary["NAME"]
-                            let idViewModel = subwayItemViewModel.subwayDictionary["id"]
-                            let sidViewModel = subwayItemViewModel.subwayDictionary["sid"]
-                            let createdAtViewModel = subwayItemViewModel.subwayDictionary["created_at"]
-                            
-                            XCTAssertEqual(updatedMetaViewModel?.fieldName, ":updated_meta")
-                            XCTAssertEqual(metaViewModel?.fieldName, ":meta")
-                            XCTAssertEqual(objectIdViewModel?.fieldName, "objectid")
-                            XCTAssertEqual(urlViewModel?.fieldName, "url")
-                            XCTAssertEqual(positionViewModel?.fieldName, ":position")
-                            XCTAssertEqual(theGeomViewModel?.fieldName, "the_geom")
-                            XCTAssertEqual(lineViewModel?.fieldName, "line")
-                            XCTAssertEqual(nameViewModel?.fieldName, "name")
-                            XCTAssertEqual(createdMetaViewModel?.fieldName, ":created_meta")
-                            XCTAssertEqual(idViewModel?.fieldName, ":id")
-                            XCTAssertEqual(sidViewModel?.fieldName, ":sid")
-                            XCTAssertEqual(createdAtViewModel?.fieldName, ":created_at")
+                        
+                        let updatedMetaViewModel = subwayItemViewModel.subwayDictionary["updated_meta"]
+                        let metaViewModel = subwayItemViewModel.subwayDictionary["meta"]
+                        let objectIdViewModel = subwayItemViewModel.subwayDictionary["OBJECTID"]
+                        let urlViewModel = subwayItemViewModel.subwayDictionary["URL"]
+                        let positionViewModel = subwayItemViewModel.subwayDictionary["position"]
+                        let theGeomViewModel = subwayItemViewModel.subwayDictionary["the_geom"]
+                        let createdMetaViewModel = subwayItemViewModel.subwayDictionary["created_meta"]
+                        let lineViewModel = subwayItemViewModel.subwayDictionary["LINE"]
+                        let nameViewModel = subwayItemViewModel.subwayDictionary["NAME"]
+                        let idViewModel = subwayItemViewModel.subwayDictionary["id"]
+                        let sidViewModel = subwayItemViewModel.subwayDictionary["sid"]
+                        let createdAtViewModel = subwayItemViewModel.subwayDictionary["created_at"]
+                        
+                        XCTAssertEqual(updatedMetaViewModel?.fieldName, ":updated_meta")
+                        XCTAssertEqual(metaViewModel?.fieldName, ":meta")
+                        XCTAssertEqual(objectIdViewModel?.fieldName, "objectid")
+                        XCTAssertEqual(urlViewModel?.fieldName, "url")
+                        XCTAssertEqual(positionViewModel?.fieldName, ":position")
+                        XCTAssertEqual(theGeomViewModel?.fieldName, "the_geom")
+                        XCTAssertEqual(lineViewModel?.fieldName, "line")
+                        XCTAssertEqual(nameViewModel?.fieldName, "name")
+                        XCTAssertEqual(createdMetaViewModel?.fieldName, ":created_meta")
+                        XCTAssertEqual(idViewModel?.fieldName, ":id")
+                        XCTAssertEqual(sidViewModel?.fieldName, ":sid")
+                        XCTAssertEqual(createdAtViewModel?.fieldName, ":created_at")
 
-                            expectation.fulfill()
-                        }
+                        expectation.fulfill()
+
                     }
                 }
             }
