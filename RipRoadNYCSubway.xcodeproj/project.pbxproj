@@ -21,6 +21,8 @@
 		99BBF7CB2613CE45004A6A13 /* SubwayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */; };
 		99BBF7D42613CE9E004A6A13 /* SubwayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7D32613CE9E004A6A13 /* SubwayResponse.swift */; };
 		99BBF7E62613D140004A6A13 /* SubwayUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBF7E52613D140004A6A13 /* SubwayUtility.swift */; };
+		99DE87C3261CD1D300626718 /* SubwayLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE87C2261CD1D300626718 /* SubwayLineViewModel.swift */; };
+		99DE87CB261CD22700626718 /* SubwayItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE87CA261CD22700626718 /* SubwayItemViewModel.swift */; };
 		99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF925D260D14DD0045A3D1 /* AppDelegate.swift */; };
 		99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */; };
 		99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF9261260D14DD0045A3D1 /* ViewController.swift */; };
@@ -69,6 +71,8 @@
 		99BBF7CA2613CE45004A6A13 /* SubwayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayRequest.swift; sourceTree = "<group>"; };
 		99BBF7D32613CE9E004A6A13 /* SubwayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayResponse.swift; sourceTree = "<group>"; };
 		99BBF7E52613D140004A6A13 /* SubwayUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayUtility.swift; sourceTree = "<group>"; };
+		99DE87C2261CD1D300626718 /* SubwayLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayLineViewModel.swift; sourceTree = "<group>"; };
+		99DE87CA261CD22700626718 /* SubwayItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayItemViewModel.swift; sourceTree = "<group>"; };
 		99EF925A260D14DD0045A3D1 /* RipRoadNYCSubway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RipRoadNYCSubway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EF925D260D14DD0045A3D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99EF925F260D14DD0045A3D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 		99BBF7A32613A02F004A6A13 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				99DE87C1261CD19400626718 /* ViewModel */,
 				99BBF7A42613A047004A6A13 /* SubwayResult.swift */,
 				99BBF7D22613CE81004A6A13 /* Response */,
 				99BBF7C92613CE27004A6A13 /* Request */,
@@ -211,6 +216,15 @@
 				99A8E1D2261B6C3A00A9AFBE /* Extensions */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		99DE87C1261CD19400626718 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				99DE87C2261CD1D300626718 /* SubwayLineViewModel.swift */,
+				99DE87CA261CD22700626718 /* SubwayItemViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		99EF9251260D14DD0045A3D1 = {
@@ -442,10 +456,12 @@
 				999B42112616178900AFBD66 /* AnimatedLoader.swift in Sources */,
 				99EF9262260D14DD0045A3D1 /* ViewController.swift in Sources */,
 				99EF925E260D14DD0045A3D1 /* AppDelegate.swift in Sources */,
+				99DE87CB261CD22700626718 /* SubwayItemViewModel.swift in Sources */,
 				999B420B2616173B00AFBD66 /* BaseViewController.swift in Sources */,
 				99EF92BC260D232E0045A3D1 /* BaseResponse.swift in Sources */,
 				99EF92C1260D23400045A3D1 /* BaseService.swift in Sources */,
 				99BBF7D42613CE9E004A6A13 /* SubwayResponse.swift in Sources */,
+				99DE87C3261CD1D300626718 /* SubwayLineViewModel.swift in Sources */,
 				99EF9260260D14DD0045A3D1 /* SceneDelegate.swift in Sources */,
 				99BBF7A52613A048004A6A13 /* SubwayResult.swift in Sources */,
 				99A8E1DB261B6CCE00A9AFBE /* CollectionViewExtension.swift in Sources */,
