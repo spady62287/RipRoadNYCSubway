@@ -14,7 +14,7 @@ enum SubwayJSONKeys: String {
 struct SubwayResult: BaseJSONSerialization {
     let success: Bool
     let result: SubwayData
-    let columns: [Column]
+    var columns: QueueRingBuffer<Column>
 }
 
 struct SubwayData {
@@ -47,19 +47,19 @@ extension SubwayResult {
             return nil
         }
         
-        var coloumsArrayPlaceholder: [Column] = [Column]()
+        self.columns = QueueRingBuffer<Column>(count: columnArray.count)
         
         for columnObject in columnArray {
             if let object = columnObject as? [String: Any] {
                 if let fieldName = object[SubwayJSONKeys.fieldName.rawValue] as? String,
                    let index = object[SubwayJSONKeys.index.rawValue] as? Int,
                    let name = object[SubwayJSONKeys.name.rawValue] as? String {
-                    coloumsArrayPlaceholder.append(Column(index: index, name: name, fieldName: fieldName))
+                    self.columns.enqueue(Column(index: index, name: name, fieldName: fieldName))
                 }
             }
         }
         
-        self.columns = coloumsArrayPlaceholder
+        
     }
 }
 
@@ -78,7 +78,15 @@ extension SubwayResult {
         
         var subwayItem = SubwayItemViewModel()
         
-        for column in self.columns {
+        if let column = self.columns.valueAtIndex(12) {
+            subwayItem.subwayDictionary[column.name] = ColumnItemViewModel(fieldName: column.fieldName, object: item[column.index])
+        }
+        
+        if let column = self.columns.valueAtIndex(11) {
+            subwayItem.subwayDictionary[column.name] = ColumnItemViewModel(fieldName: column.fieldName, object: item[column.index])
+        }
+
+        if let column = self.columns.valueAtIndex(10) {
             subwayItem.subwayDictionary[column.name] = ColumnItemViewModel(fieldName: column.fieldName, object: item[column.index])
         }
         
@@ -134,12 +142,6 @@ extension SubwayResult {
     }
     
     private func lineColumnItem() -> Column {
-        var lineColumn: Column = Column(index: 12, name: "LINE", fieldName: "line")
-        for column in self.columns {
-            if column.name == "LINE" {
-                lineColumn = column
-            }
-        }
-        return lineColumn
+        return Column(index: 12, name: "LINE", fieldName: "line")
     }
 }

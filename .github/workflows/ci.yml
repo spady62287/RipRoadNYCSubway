@@ -31,10 +31,3 @@ jobs:
     
       - name: Build and run tests
         run: bundle exec fastlane test
-        
-      - name: Archive fastlane test results
-        if: always()
-        uses: actions/upload-artifact@v2.1.4
-        with:
-          name: test-results
-          path: fastlane/test_output

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9919D88B2613941800C60178 /* BaseJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919D88A2613941800C60178 /* BaseJSONSerialization.swift */; };
+		99385261262893AE00A728AA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99385260262893AE00A728AA /* Queue.swift */; };
+		993852662628961D00A728AA /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993852652628961D00A728AA /* RingBuffer.swift */; };
+		993852712628967600A728AA /* QueueRingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993852702628967600A728AA /* QueueRingBuffer.swift */; };
 		999B420B2616173B00AFBD66 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B420A2616173B00AFBD66 /* BaseViewController.swift */; };
 		999B42112616178900AFBD66 /* AnimatedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B42102616178900AFBD66 /* AnimatedLoader.swift */; };
 		999B421926161C2400AFBD66 /* TestBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999B421826161C2400AFBD66 /* TestBaseViewController.swift */; };
@@ -58,6 +61,9 @@
 
 /* Begin PBXFileReference section */
 		9919D88A2613941800C60178 /* BaseJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJSONSerialization.swift; sourceTree = "<group>"; };
+		99385260262893AE00A728AA /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		993852652628961D00A728AA /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		993852702628967600A728AA /* QueueRingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRingBuffer.swift; sourceTree = "<group>"; };
 		999B420A2616173B00AFBD66 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		999B42102616178900AFBD66 /* AnimatedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLoader.swift; sourceTree = "<group>"; };
 		999B421826161C2400AFBD66 /* TestBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		993852782628969200A728AA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				99385260262893AE00A728AA /* Queue.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9938527C262896D900A728AA /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				99A8E1E6261B6F5300A9AFBE /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		9938527D2628984E00A728AA /* RingBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				993852652628961D00A728AA /* RingBuffer.swift */,
+				993852702628967600A728AA /* QueueRingBuffer.swift */,
+			);
+			path = RingBuffer;
+			sourceTree = "<group>";
+		};
 		999B420F2616177300AFBD66 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +197,9 @@
 		99A8E1E5261B6F3E00A9AFBE /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				99A8E1E6261B6F5300A9AFBE /* LinkedList.swift */,
+				9938527D2628984E00A728AA /* RingBuffer */,
+				9938527C262896D900A728AA /* LinkedList */,
+				993852782628969200A728AA /* Protocol */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -448,6 +481,7 @@
 			files = (
 				99A8E1E7261B6F5300A9AFBE /* LinkedList.swift in Sources */,
 				99BBF7CB2613CE45004A6A13 /* SubwayRequest.swift in Sources */,
+				993852712628967600A728AA /* QueueRingBuffer.swift in Sources */,
 				99B2931B26163B7900D71910 /* SubwayLineCollectionViewCell.swift in Sources */,
 				99EF92AF260D22E00045A3D1 /* BaseRequest.swift in Sources */,
 				99A8E1D6261B6C7100A9AFBE /* TableViewExtension.swift in Sources */,
@@ -459,6 +493,7 @@
 				99DE87CB261CD22700626718 /* SubwayItemViewModel.swift in Sources */,
 				999B420B2616173B00AFBD66 /* BaseViewController.swift in Sources */,
 				99EF92BC260D232E0045A3D1 /* BaseResponse.swift in Sources */,
+				993852662628961D00A728AA /* RingBuffer.swift in Sources */,
 				99EF92C1260D23400045A3D1 /* BaseService.swift in Sources */,
 				99BBF7D42613CE9E004A6A13 /* SubwayResponse.swift in Sources */,
 				99DE87C3261CD1D300626718 /* SubwayLineViewModel.swift in Sources */,
@@ -466,6 +501,7 @@
 				99BBF7A52613A048004A6A13 /* SubwayResult.swift in Sources */,
 				99A8E1DB261B6CCE00A9AFBE /* CollectionViewExtension.swift in Sources */,
 				99BBF7E62613D140004A6A13 /* SubwayUtility.swift in Sources */,
+				99385261262893AE00A728AA /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
